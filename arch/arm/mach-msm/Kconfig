@@ -2791,3 +2791,9 @@ config SAMSUNG_PRODUCT_SHIP
 	bool "set up for product shipping"
 	default n
 endif
+
+config CPU_VOLTAGE_TABLE
+ 	bool "Enable CPU Voltage Table via sysfs for adjustements"
+ 	default n
+ 	help
+ 	  Krait User Votlage Control
