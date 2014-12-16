@@ -22,8 +22,8 @@ find -name '*.ko' -exec rm -rf {} \;
 #generate kernel config
 export ARCH=arm
 export CROSS_COMPILE=/home/jazz/prebuilts/arm-eabi-4.7/bin/arm-eabi-
-#make jf_defconfig VARIANT_DEFCONFIG=jf_eur_defconfig SELINUX_DEFCONFIG=selinux_defconfig || exit 1
-make jf_defconfig VARIANT_DEFCONFIG=jf_tmo_defconfig SELINUX_DEFCONFIG=selinux_defconfig || exit 1
+make jazz_jf_defconfig VARIANT_DEFCONFIG=jf_eur_defconfig SELINUX_DEFCONFIG=selinux_defconfig || exit 1
+# make jf_defconfig VARIANT_DEFCONFIG=jf_tmo_defconfig SELINUX_DEFCONFIG=selinux_defconfig || exit 1
 
 #build kernel
 make -j2 || exit 1
