@@ -2805,3 +2805,22 @@ config FORCE_FAST_CHARGE
 	  A simple sysfs interface to force adapters that
 	  are detected as USB to charge as AC (1A/h) or to set
 	  custom charging currents for AC and USB.
+
+config LOW_CPUCLOCKS
+	bool "Enable ultra low CPU clocks"
+	default n
+	help
+	  Ultra low cpu frequencies enabled for CPU and L2 Cache
+	  
+config CPU_OVERCLOCK
+	bool "Enable CPU Overclocking option"
+	default n
+	help
+	  Krait overclocking up to 2.1 GHz
+
+config OC_ULTIMATE
+	bool "Ultimate CPU Overclocking"
+	depends on CPU_OVERCLOCK
+	default n
+	help
+	  Ultimate Krait overclocking up to 2.3 GHz
